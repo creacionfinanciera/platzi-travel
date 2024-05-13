@@ -51,7 +51,7 @@ Un breakpoint es el salto en el que cambia la pantalla de layout, por ejemplo, c
 
 Cómo mencionamos anteriormente, tailwind es `mobile first`, es decir, nosotros todo el tiempo vamos a estar trabajando tailwind con el breakpoint small, el cual es equivalente a un dispositivo mobil.
 
-![Breakpoints](./img/breakpoints.png)
+![Breakpoints](../platzi-travel/public/img/breakpoints.png)
 
 - Breakpoint de 320px, equivalente a small y hace referencia a un dispositivo móvil
 - Breakpoint de 768px, equivalente a medium y hace referencia a una tablet
