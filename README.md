@@ -1,5 +1,6 @@
 # platzi-travel
-Este es el repositorio de platzi-travel.
+Este es el repositorio de platzi-travel, y a continuación tenemos el diseño de nuestra página web en Figma.
+`https://www.figma.com/file/aPbr2Rhd5SCUjNYu6NRPPB/Platzi-Travel-Mockups?type=design&node-id=0-1&mode=design&t=2Cdx99Eu32rpK50l-0`
 
 
 ## Pasos para la instalación de tailwindcss
@@ -64,7 +65,7 @@ Un Design System va a ser nuestro archivo donde vamos a definir todos los estilo
 Antes creamos una pequeña automatización, para no escribir cada que tengamos que volver a compilar nuestro archivo de tailwind:
 
 1. Vamos al archivo `package.json`, en la sesión de "scripts"
-2. Creamos la siguiente variable: `"tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch --verbose"`
+2. Creamos la siguiente variable: `"tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch --verbose"` 
 
 Para crear el Design System, vamos al archivo `tailwind.config.js` y vamos a ver que se compone de tres principales partes:
 - `purge: [],` => esto es para limpiar nuestro archivo, las veces que lo necesitemos, lo vamos a ver más adelante
@@ -80,6 +81,7 @@ Podemos extraer una clase del código HTML y guardarla como una directiva, en el
 }
 
 Cada vez que hagamos un cambio en las directivas o en los archivos base de tailwind.css, debemos correr el comando => `npm run tw:build`
+### Nota: Al parecer no es necesario estar corriendo este build porque tailwind lo corre automaticamente, tal vez la última versión que salió después del video grabado, fue actualizada para que funcionara de esta manera.
 
 ## Agregando animaciones al proyecto
 
@@ -89,6 +91,8 @@ variants: {
     width: ["responsive", "hover", "focus"],
     extend: {},
   },
+
+  # Creando la sección de rentas destacadas
 
 
 
