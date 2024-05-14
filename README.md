@@ -92,7 +92,23 @@ variants: {
     extend: {},
   },
 
-  # Creando la sección de rentas destacadas
+## Footer
+Un Shortcut o atajo en VSC para modificar una sola vez en varias líneas es `option + señalar con el cursos en varias líneas + hacer el cambio`
+
+## Agregando el dark mode
+1. Esta fue una de las últimas cosas que incorporó tailwind, para hacerlo, nos seguramos que en nuestro archivo `tailwind.config.js` se encuentre `darkMode: 'class',` que lo podemos manejar con media o class, nosotros lo vamos a manejar con class
+2. Vamos a nuestro archivo `index.html` y en la primera etiqueta colocamos class `<html lang="en" class="dark">`, para manipular la clase que va a contener el light y el dark mode a su vez 
+
+## Purge CSS
+Esto se usa para remover clases que no se esten utilizando y que el archivo quede mucho más liviano, pero en nueva versión de tailwind, este comando ya no se usa, se usa `content: ["./public/index.html", "./src/**/*.{html,js}"],` en el archivo `tailwind.config.css`
+
+## Como hacer la migración de tu proyecto a Tailwind 3.0
+`npm install -D tailwindcss@latest postcss@latest autoprefixer@latest`
+
+`cmd+c` => para dejar de correr el building.
+
+
+
 
 
 
